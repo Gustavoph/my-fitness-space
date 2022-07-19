@@ -8,7 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 
+  html {
+    font-size: 62.5%;
+  }
+
   body {
+    font-size: 1.6rem;
     background-color: ${({ theme }) => theme.colors.primary};
   }
 

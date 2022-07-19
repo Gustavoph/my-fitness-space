@@ -15,5 +15,8 @@ export default {
     text: '#666360',
     text_dark: '#000000',
     text_light: '#FFFFFF',
+    border: '#525253',
+    button: '#EA8826',
+    text_dark_2:'#312E38'
   },
 }
