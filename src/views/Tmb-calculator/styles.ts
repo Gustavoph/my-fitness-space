@@ -11,6 +11,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: calc(100vh - 100rem);
+
+  .ant-btn:hover, .ant-btn:focus, .ant-btn:active {
+    color: ${({ theme }) => theme.colors.text_dark_2};
+    border-color: ${({ theme }) => theme.colors.border};
+    background-color: ${({ theme }) => theme.colors.button};
+  }
 `;
 
 export const Content  = styled.div`
@@ -27,6 +33,10 @@ export const Title = styled(Typography.Paragraph)`
 
 export const Form = styled(FormAnt)`
   width: 100%;
+
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+    background: ${({ theme }) => theme.colors.secondary};
+  }
 `;
 
 export const FormItem = styled(FormAnt.Item)`
@@ -77,6 +87,10 @@ export const Select = styled(SelectAnt)`
     border-radius: 1rem !important;
     border-color: ${({ theme }) => theme.colors.border} !important;
     background-color: ${({ theme }) => theme.colors.secondary} !important;
+  }
+
+  .ant-select-selection-item {
+    padding-top: .9rem !important;
   }
 
   font-size: 1.6rem;
