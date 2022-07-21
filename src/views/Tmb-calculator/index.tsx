@@ -13,6 +13,7 @@ import {
   FormItem,
   Container, 
 } from './styles';
+import { TmbModal } from '../../components/Modals/TmbModal';
 
 const { useForm } =  Form;
 const { Option } = Select;
@@ -101,6 +102,8 @@ export function TmbCalculator() {
           </Row>
         </Form>
       </Content>
+
+      <TmbModal />
     </Container>
   )
 }
